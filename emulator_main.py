@@ -107,7 +107,6 @@ def make_packet(car_info, lane_info, version):
     # 소켓 연결
     while True:
         try:
-            # mcu_ip = '172.20.30.27'
             mcu_ip = '127.0.0.1'
             mcu_port = int(20333)
             mcu_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
